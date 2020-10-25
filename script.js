@@ -6,10 +6,10 @@ let numClosedDoors = 3;
 let openDoor1, openDoor2, openDoor3;
 let currentlyPlaying = true;
 
-let botDoorPath = 'robot.svg';
-let beachDoorPath = 'beach.svg';
-let spaceDoorPath = 'space.svg';
-let closedDoorPath = 'closed_door.svg';
+let botDoorPath = './robot.svg';
+let beachDoorPath = './beach.svg';
+let spaceDoorPath = './space.svg';
+let closedDoorPath = './closed_door.svg';
 
 const randomChoreDoorGenerator = () => {
   let choreDoor = Math.floor(Math.random() * numClosedDoors);
