@@ -6,6 +6,11 @@ let numClosedDoors = 3;
 let openDoor1, openDoor2, openDoor3;
 let currentlyPlaying = true;
 
+let botDoorPath = 'robot.svg';
+let beachDoorPath = 'beach.svg';
+let spaceDoorPath = 'space.svg';
+let closedDoorPath = 'closed_door.svg';
+
 const randomChoreDoorGenerator = () => {
   let choreDoor = Math.floor(Math.random() * numClosedDoors);
   if (choreDoor === 0) {
@@ -47,14 +52,6 @@ const playDoor = (door) => {
     gameOver();
   }
 }
-
-let botDoorPath = 'https://content.codecademy.com/projects/chore-door/images/robot.svg';
-
-let beachDoorPath = 'https://content.codecademy.com/projects/chore-door/images/beach.svg';
-
-let spaceDoorPath = 'https://content.codecademy.com/projects/chore-door/images/space.svg';
-
-let closedDoorPath = 'https://content.codecademy.com/projects/chore-door/images/closed_door.svg';
 
 doorImage1.onclick = () => {
   if (currentlyPlaying && !isClicked(doorImage1)) {
