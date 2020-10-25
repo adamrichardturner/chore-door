@@ -29,7 +29,7 @@ const randomChoreDoorGenerator = () => {
 };
 
 const isBot = door => {
-  if (door.src === botDoorPath) {
+  if (door.getAttribute("src") === botDoorPath) {
     return true;
   } else {
     return false;
@@ -37,7 +37,7 @@ const isBot = door => {
 }
 
 const isClicked = (door) => {
-  if (door.src === closedDoorPath) {
+  if (door.getAttribute("src") === closedDoorPath) {
     return false;
   } else {
     return true;
